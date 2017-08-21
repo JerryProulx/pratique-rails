@@ -70,12 +70,29 @@ footer ul li {
 
 .article {
     
+    &-title a{
+        font-size: 1.5rem;
+        color: #333;
+        font-weight: bold;
+    }
+    
+    &-title a:hover {
+        color: #777;
+        text-decoration: none;
+    }
+    
+    &-body {
+        border-top: 1px solid #eaeaea;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
     &-actions {
       border-top: 1px solid #eaeaea;
       padding-top: 5px;
     }
     
-    &-title {
+    &-description {
       margin: 0;
     }
     
