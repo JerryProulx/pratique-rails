@@ -67,3 +67,16 @@ footer ul li {
     float: left;
     padding: 0 0 0 20px;
 }
+
+.article {
+    
+    &-actions {
+      border-top: 1px solid #eaeaea;
+      padding-top: 5px;
+    }
+    
+    &-title {
+      margin: 0;
+    }
+    
+}
