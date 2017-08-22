@@ -84,7 +84,6 @@ footer ul li {
     &-body {
         border-top: 1px solid #eaeaea;
         padding-top: 15px;
-        padding-bottom: 15px;
     }
     
     &-actions {
@@ -94,6 +93,11 @@ footer ul li {
     
     &-description {
       margin: 0;
+    }
+    
+    &-meta-details {
+        border-top: 1px solid #eaeaea;
+        margin-top: 15px;
     }
     
 }
