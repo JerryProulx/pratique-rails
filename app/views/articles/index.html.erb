@@ -1,5 +1,13 @@
 <h1 class="text-center">All articles</h1>
 
+<div class="center">
+    <%= will_paginate %>
+</div>
 <%= render 'articles', obj: @articles %>
+<div class="center">
+    <%= will_paginate %>
+</div>
+
+
 
 <%= link_to "Home page", root_path %>  
