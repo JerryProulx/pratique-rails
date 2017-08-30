@@ -7,8 +7,8 @@ class CreateCategoriesTest < ActionDispatch::IntegrationTest
     end
     
     test "get new category form and create category" do
-        # login as an admin
-        # post login_path, params: { email: @user.email, password: @user.password }
+        # simulate user signing in
+        sign_in_as(@user, "password")
         
         get new_category_path
         assert_template 'categories/new'
@@ -20,6 +20,9 @@ class CreateCategoriesTest < ActionDispatch::IntegrationTest
     end
     
     test "invalid category submission results in failure" do
+        # simulate user signing in
+        sign_in_as(@user, "password")
+        
         get new_category_path
         assert_template 'categories/new'
         assert_no_difference 'Category.count' do
