@@ -1,1 +1,13 @@
-<%= @category.name %>
+<h1 class="center"><%= "All articles for related to :" + @category.name %></h1>
+
+<div class="center">
+    <%= will_paginate @category_articles %>
+</div>
+<%= render 'articles/articles', obj: @category_articles %>
+<div class="center">
+    <%= will_paginate @category_articles %>
+</div>
+
+
+
+<%= link_to "Home page", root_path %>  
